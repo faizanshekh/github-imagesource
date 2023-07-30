@@ -49,9 +49,6 @@ body{
     display: none;
 }
 @media only screen and (max-width: 768px) {
-    .body{
-        overflow: hidden;
-    }
     .search-result img {
         height: auto;
         transition: none;
@@ -59,5 +56,11 @@ body{
     .search-result img:hover {
         transform: none;
     }
+    html{
+        overflow-x: hidden;
+    }
+   
 }
+
+
 
