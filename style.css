@@ -1,66 +1,177 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins',sans-serif;
-    
 }
-body{
-    overflow-x: hidden;
+#heading .row {
+    padding: 0px 7%;
+    background: #C4A484;
 }
-.row h1{
-    text-align: center;
-    font-weight: 800;
+.btn{
+    margin-right: 10px;
 }
-#search-input{
-    border: 2px solid #000000;
-    
+#logo{
+    padding: 20px 8%;
+    border-bottom: 1px solid lightgray;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      
 }
-
-.search-result img{
-    width: 100%;
-    height: 277.33px;
-    transition: 0.3s ease transform;
+.col-12 p{
+    font-size: 12px;
 }
-.search-result img:hover{
-    transform: scale(1.1);
-    z-index: 1;
-}
-.search-result a{
-    text-decoration: none;
-    font-size: 20px;
+.nav-link{
+    font-size: 18px;
     color: #000000;
-    display: flex;
-    padding: 10px;
-    text-transform: capitalize;
-    border: 1px solid lightgray;
-    border-radius: 5px;
+    font-weight: 600;
+    font-family: sans-serif;
     
 }
-
-.btns{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.navbar-nav .nav-item:not(:last-child) .nav-link {
+    margin-right: 145px;
+}
+#logo h2{
+    color: rgb(101, 197, 197);
+    font-size: 28px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.input-group input{
+    border-radius: 22px;
+    padding-left: 30px;
+    border: 1.2px solid rgb(255, 0, 0);
+}
+.input-group .btn{
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+    padding-right: 15px;
+    padding-left: 18px;
+    background:rgb(231, 71, 71);
+    color: #ffffff;
+    font-weight: 600;
+}
+#services{
+    margin-top: -50px;
+   padding-left: 10%;
+   padding-right: 10%;
+}
+#services {
+    text-align: center;
+}
+#services img{
+    border-radius: 50%;
+    border: 3px solid darkorange;
+}
+#services h5{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 750;
+    color: #000000;
+}
+#services h6{
+    color: gray;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+.ml-auto{
+    font-size: 14px;
+    font-weight: 650;
+}
+.quantity-control{
+    width: 20px;
+    height: 20px;
 
 }
-#show-more{
-    display: none;
+.nav-link{
+    font-size: 16px;
 }
-@media only screen and (max-width: 768px) {
-    .search-result img {
-        height: auto;
-        transition: none;
-    }
-    .search-result img:hover {
-        transform: none;
-    }
-    html{
-        overflow-x: hidden;
-    }
+#login{
+    margin-left: 25px;
+    font-size: 14px;
+    font-weight: 500;
+}
+header .col-md-6 {
+    padding-top: 10px;
+}
+#phone{
+    color: #ffffff;
+    font-size: 14px;
+    margin-right: 5px;
+}
+#text {
+    margin-left: 25px;
+}
+.col-md-6 p {
+    font-size: 14px;
+    color: #ffffff;
+
+}
+.shopping-cart{
+    margin-left: 90px;
+}
+.shopping-cart .dropdown-menu{
+    width: 285px;
+}
+
+.shopping-cart .quantity-control p{
+    width: 90px;
+    height: 12px;
+    border-radius: 50%;
+    margin-top: -30px;
+    margin-right: 15px;
+    font-size: 16px;
+    font-weight: 700;
    
 }
 
+#home{
+    width: 100%;
+    height: auto;
+}
+#home .content{
+  background: #c4a484d2;
+  padding: 7% 7.5%;
 
+}
+#home .img{
+    padding-left: 0px;
+    padding-right: 0px;
+}
 
+#home h1{
+    font-weight: 500;
+}
+#home .btn {
+    background: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 22px;
+    padding: 11px 25px;
+    color:rgb(255, 47, 0);
+    font-weight: 500;
+    font-family: sans-serif;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+
+}
+.btns .btn{
+    padding: 5px 30px;
+    border-radius: 22px;
+    color: #ffffff;
+}
+
+.col-md-6 a {
+    width: 20px;
+    height: 25px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px #C4A484;
+}
+.col-md-6 i {
+    font-size: 12px;
+    color: #C4A484;
+}

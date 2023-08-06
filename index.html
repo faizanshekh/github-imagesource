@@ -2,94 +2,232 @@
 <html lang="en">
 
 <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Faizan Shaikh">
-    <title>Image Search App</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <meta name="description" content="This is a test page for HTML/CSS.">
+    <meta name="keywords" content="HTML, CSS, test, example, website">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Page title -->
+    <title>HTML TEST</title>
+
+    <!-- Bootstrap and custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Header section -->
     <header>
-        <div class="row justify-content-center mt-4">
-            <div class="col-md-4">
-                <h1>Image Source</h1>
+        <div class="container-fluid" id="heading">
+            <div class="row">
+                <!-- Left side of the header -->
+                <div class="col-md-6 d-flex justify-content-start">
+                    <p><i class="fa-solid fa-phone mr-2" id="phone"></i>+61-401-224-357</p>
+                    <p id="text">Free shipping on orders $49+/Express $99+</p>
+                </div>
+                <!-- Right side of the header -->
+                <div class="col-md-6 d-flex justify-content-end">
+                    <a href="#" target="_blank" class="btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank" class="btn"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank" class="btn"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
             </div>
         </div>
-        <div class="row search justify-content-center p-3">
-            <div class="col-sm-6 col-md-4 col-lg-7">
-                <form class="d-flex">
-                    <input class="form-control me-2" id="search-input" type="search" placeholder="Search image here"
-                        aria-label="Search" required>
-                    <button class="btn btn-success" type="submit">Search</button>
-                </form>
+        <div class="container-fluid" id="logo">
+            <div class="row ">
+                <!-- Logo section -->
+                <div class="col-md-3 d-flex align-items-center">
+                    <h2>LOGO</h2>
+                </div>
+                <!-- Search bar section -->
+                <div class="col-md-5 d-flex align-items-center">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username"
+                            aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+
+                <!-- Shopping cart and user login section -->
+                <div class="col-md-3 d-flex shopping-cart">
+                    <!-- Shopping cart dropdown -->
+                    <div class="dropdown">
+                        <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+                        <div class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton">
+                            <!-- Product 1 -->
+                            <div class="product-info d-flex align-items-center">
+                                <ul class="p-0">
+                                    <li class="d-flex"><img
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeqMAJBF4GQWtJ6G-RXhj_JTvQqxmajmjLoQ&usqp=CAU"
+                                            alt="Product Image" style="max-width: 50px; max-height: 50px;">
+                                        <div class="col-12 align-items-center">
+                                            <p>Product Name</p>
+                                            <div class="quantity-control d-flex align-items-center">
+                                                <p class="quantity-btn decrement">-</p>
+                                                <p>03</p>
+                                                <p class="quantity-btn increment">+</p>
+                                            </div>
+                                        </div>
+                                        <p class="ml-auto">$50.99</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <!-- Product 2 -->
+                            <div class="product-info d-flex align-items-center">
+                                <ul class="p-0">
+                                    <li class="d-flex"><img
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT78HTLh3_kO4jpnEtAV95tIFZlwtJCdxxz-w&usqp=CAU"
+                                            alt="Product Image" style="max-width: 50px; max-height: 50px;">
+                                        <div class="col-12 align-items-center">
+                                            <p>Product Name</p>
+                                            <div class="quantity-control d-flex align-items-center">
+                                                <p class="quantity-btn decrement">-</p>
+                                                <p>02</p>
+                                                <p class="quantity-btn increment">+</p>
+                                            </div>
+                                        </div>
+                                        <p class="ml-auto">$50.99</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <!-- Product 3 -->
+                            <div class="product-info d-flex align-items-center">
+                                <ul class="p-0">
+                                    <li class="d-flex"><img
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqF_nip6uXlacaY8YYBL4aC05wMhJi1BUoIg&usqp=CAU"
+                                            alt="Product Image" style="max-width: 50px; max-height: 50px;">
+                                        <div class="col-12 align-items-center">
+                                            <p>Product Name</p>
+                                            <div class="quantity-control d-flex align-items-center">
+                                                <p class="quantity-btn decrement">-</p>
+                                                <p>02</p>
+                                                <p class="quantity-btn increment">+</p>
+                                            </div>
+                                        </div>
+                                        <p class="ml-auto">$50.99</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btns">
+                                <button type="button" class="btn btn-warning mb-3">Continue</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cart total and login/register link -->
+                    <div class="d-flex align-items-center">
+                        <p style="font-size: 14px;font-weight:500;">$254.46</p>
+                        <p id="login">Login/Register</p>
+                    </div>
+                </div>
             </div>
+        </div>
+        <!-- Main Navigation Bar -->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <div class="navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <!-- Dropdown menu for categories -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    By Category
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Food</a></li>
+                                    <li><a class="dropdown-item" href="#">Cold Drink</a></li>
+                                    <li><a class="dropdown-item" href="#">Snacks</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">All Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Our Goal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FAQs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
+
+    <!-- Main content section -->
     <main>
-        <div class="container">
-            <div class="row search-results mt-5">
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="search-result">
-                        <img src="https://images.unsplash.com/photo-1540995730525-5157dc7746f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzU4MDV8MHwxfHNlYXJjaHw1NHx8YXJteXxlbnwwfHx8fDE2OTAxMTMyNjh8MA&ixlib=rb-4.0.3&q=80&w=400"
-                            class="img-fluid" alt="Mountain under the city">
-                        <a href="https://unsplash.com/photos/U9ZKrZSS5uU"
-                            target="_blank">Man holding rifle</a>
-                    </div>
+        <div class="container-fluid mt-2" id="home">
+            <div class="row">
+                <!-- Left content -->
+                <div class="col-md-6 content">
+                    <h1 class="mb-4">Lorem Ipsum is simply dummy text</h1>
+                    <h5 class="mb-5">We make it easy click, click & done !</h5>
+                    <button type="button" class="btn btn-outline-dark bg-light">Shop Now</button>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="search-result">
-                        <img src="https://images.unsplash.com/photo-1590362891991-f776e747a588?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzU4MDV8MHwxfHNlYXJjaHwyOHx8Y2FyfGVufDB8fHx8MTY5MDExMzQ5Nnww&ixlib=rb-4.0.3&q=80&w=400"
-                            class="img-fluid" alt="Mountain under the city">
-                        <a href="https://unsplash.com/photos/KQjBXXPRsYM"
-                            target="_blank">White and black BMW M3</a>
-                    </div>
+                <!-- Right image -->
+                <div class="col-md-6 img">
+                    <img src="https://img.freepik.com/free-photo/flat-lay-natural-self-care-products-composition_23-2148990019.jpg"
+                        alt="Product Image">
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="search-result">
-                        <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmlrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60"
-                            class="img-fluid" alt="Mountain under the city">
-                        <a href="https://unsplash.com/photos/eeTJKC_wz34"
-                            target="_blank">Black and orange Motorcycle</a>
-                    </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="container" id="services">
+            <div class="row">
+                <!-- Service 1 -->
+                <div class="col-md-3">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_RfcqnB7nhB6_A-WcWc9E1VrolWw5SltQUw&usqp=CAU"
+                        alt="Product Image" style="max-width: 120px; max-height: 120px;">
+                    <h5 class="mt-3">Free Shipping</h5>
+                    <h6>On all orders above $49</h6>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="search-result">
-                        <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGVhcnRofGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60"
-                            class="img-fluid" alt="Mountain under the city">
-                        <a href="https://unsplash.com/photos/yZygONrUBe8"
-                            target="_blank">View of earth and satellite</a>
-                    </div>
+                <!-- Service 2 -->
+                <div class="col-md-3">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXdayqCOA3GX2pwoUi54wLafe29Tu-TMRKeJ7P1rSc-eTrgOk6azE_yO-_EUOiw2qXVd8&usqp=CAU"
+                        alt="Product Image" style="max-width: 120px; max-height: 120px;">
+                    <h5 class="mt-3">Free Return</h5>
+                    <h6>Returns are free within 9 days</h6>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="search-result">
-                        <img src="https://images.unsplash.com/photo-1591123720164-de1348028a82?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fGFybXl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60"
-                            class="img-fluid" alt="Mountain under the city">
-                        <a href="https://unsplash.com/photos/D6egwLuXVDU"
-                            target="_blank">Black assault rifle on brown wooden log</a>
-                    </div>
+                <!-- Service 3 -->
+                <div class="col-md-3">
+                    <img src="https://thumbs.dreamstime.com/b/credit-card-lock-vector-icon-filled-flat-sign-mobile-concept-web-design-secure-payment-simple-solid-symbol-logo-112731317.jpg"
+                        alt="Product Image" style="max-width: 120px; max-height: 120px;">
+                    <h5 class="mt-3">100% Payment Secure</h5>
+                    <h6>Your payments are safe with us</h6>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="search-result">
-                        <img src="https://images.unsplash.com/photo-1689457362806-af3a973a3c45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
-                            class="img-fluid" alt="Mountain under the city">
-                        <a href="https://unsplash.com/photos/a-city-on-a-hill-with-a-mountain-in-the-background-sn7aS4DD9Ro"
-                            target="_blank">Mountain under the city</a>
-                    </div>
+                <!-- Service 4 -->
+                <div class="col-md-3">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt3KqnOQni2iMm-WThA8dWrrrZlmVrjk-tRQ&usqp=CAU"
+                        alt="Product Image" style="max-width: 120px; max-height: 120px;">
+                    <h5 class="mt-3">Support 24/7</h5>
+                    <h6>Contact us 24 hours a day</h6>
                 </div>
             </div>
         </div>
         </div>
-        <div class="btns p-3">
-            <button class="btn btn-primary mt-4" id="show-more" type="submit">Show more</button>
-        </div>
-    </main>
-    <script src="script.js"></script>
+    </footer>
+
+    <!-- JavaScript libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/cf78e1c139.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
